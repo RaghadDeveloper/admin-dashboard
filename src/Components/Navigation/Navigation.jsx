@@ -15,6 +15,7 @@ import { AiOutlineUserSwitch } from "react-icons/ai";
 import { MdSwapHoriz } from "react-icons/md";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { ThemeContext } from "../../ThemeContext";
+import { profileImg } from "../../assets/images/profileImg.jpg";
 
 function Navigation({ userName }) {
   const [nav, setNav] = useState(false);
@@ -35,11 +36,7 @@ function Navigation({ userName }) {
       </div>
       <header>
         <div className="profile">
-          <img
-            src="src/assets/images/profileImg.jpg"
-            alt=""
-            className="profile-img"
-          />
+          <img src={profileImg} alt="" className="profile-img" />
         </div>
         <span>{userName}</span>
       </header>
