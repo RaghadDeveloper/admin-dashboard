@@ -15,7 +15,7 @@ import { AiOutlineUserSwitch } from "react-icons/ai";
 import { MdSwapHoriz } from "react-icons/md";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { ThemeContext } from "../../ThemeContext";
-import { profileImg } from "../../assets/images/profileImg.jpg";
+import profileImg from "../../assets/images/profileImg.jpg";
 
 function Navigation({ userName }) {
   const [nav, setNav] = useState(false);
