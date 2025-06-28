@@ -1,0 +1,72 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  --color: #0a6672;
+}
+header .search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+header .search-bar input {
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 16px;
+  padding: 8px;
+  flex: 1;
+  background-color: transparent;
+  font-size: 16px;
+}
+header .search-bar input:focus {
+  outline: none;
+  border: 1px solid var(--color);
+}
+header .search-bar input:focus::placeholder {
+  color: var(--color);
+}
+header.dark input {
+  color: white;
+}
+
+header .search-bar .icon {
+  position: absolute;
+  right: 8px;
+  color: rgb(82, 82, 82);
+}
+header .search-bar input:focus ~ .icon {
+  color: var(--color);
+}
+
+header .tools {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+header .tools .icon {
+  color: rgb(82, 82, 82);
+  font-size: 20px;
+  cursor: pointer;
+}
+header .tools .icon:hover {
+  color: var(--color);
+}
+
+header .tools .user img {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid var(--color);
+}
+header .tools .user:active {
+  scale: 0.97;
+}
+
+header .tools .divider {
+  width: 1px;
+  background-color: var(--color);
+  align-self: stretch;
+}

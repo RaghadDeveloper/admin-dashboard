@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+:root {
+  --primary-color: #810551;
+  --secondary-color: #05454d;
+  --clr-i: #00464e;
+  --clr-ii: #810551;
+}
+.App {
+  position: relative;
+  min-height: 100vh;
+  background-color: #111;
+  color: white;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  background-color: #111;
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00464e;
+}

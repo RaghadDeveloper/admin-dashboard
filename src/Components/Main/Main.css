@@ -1,0 +1,14 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e4e4;
+  color: black;
+  min-height: 100vh;
+  flex: 1;
+}
+
+.main.dark {
+  background-color: #111;
+  color: white;
+}
